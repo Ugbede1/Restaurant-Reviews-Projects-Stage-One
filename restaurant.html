@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurant Reviews: Stage 1 Ugbede Achile - Full Stack Front End Developer - Software Engineer">
+  <meta name="keywords" content="Restaurant Reviews: Stage 1, ugbede achile, HTML, CSS, JS, JavaScript, front-end, frontend, web development, programmer">
+  <meta name="author" content="Ugbede Achile">
+
+  <!-- css files-->
+
+  <!-- Normalize.css for better cross-browser consistency -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+
+  <title>Restaurant Info</title>
+</head>
+
+<body class="inside">
+  <!-- Beginning header -->
+  <header>
+    <!-- Beginning nav -->
+    <nav>
+      <h1><a href="/">Restaurant Reviews</a></h1>
+    </nav>
+    <!-- Beginning breadcrumb -->
+    <ul id="breadcrumb" >
+      <li><a href="/">Home</a></li>
+    </ul>
+    <!-- End breadcrumb -->
+    <!-- End nav -->
+  </header>
+  <!-- End header -->
+
+  <!-- Beginning main -->
+  <main id="maincontent">
+    <!-- Beginning map -->
+    <section id="map-container" aria-label="Map of restaurants" role="application">
+      <div id="map"></div>
+    </section>
+    <!-- End map -->
+    <!-- Beginning restaurant -->
+    <section id="restaurant-container" tabindex="0" aria-label="Restaurant Information">
+      <h2 id="restaurant-name" tabindex="0"></h2>
+      <img id="restaurant-img" tabindex="0">
+      <p id="restaurant-cuisine" tabindex="0"></p>
+      <p id="restaurant-address" tabindex="0"></p>
+      <table id="restaurant-hours" tabindex="0"></table>
+    </section>
+    <!-- end restaurant -->
+    <!-- Beginning reviews -->
+    <section id="reviews-container">
+      <ul id="reviews-list" tabindex="0"></ul>
+    </section>
+    <!-- End reviews -->
+  </main>
+  <!-- End main -->
+
+  <!-- Beginning footer -->
+  <footer id="footer">
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+  <!-- End footer -->
+
+  <!-- Beginning scripts -->
+  <!-- Database helpers -->
+  <script type="text/javascript" src="js/dbhelper.js"></script>
+  <!-- Service Worker -->
+  <script type="application/javascript" charset="utf-8" src="js/sw_register.js"></script>
+  <!-- Main javascript file -->
+  <script type="text/javascript" src="js/restaurant_info.js"></script>
+  <!-- Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjPvHRlOprz2ZXphKC6Y700EfL8QQZ90M&libraries=places&callback=initMap"></script>
+  <!-- End scripts -->
+ AIzaSyBjPvHRlOprz2ZXphKC6Y700EfL8QQZ90M
+</body>
+
+</html>
