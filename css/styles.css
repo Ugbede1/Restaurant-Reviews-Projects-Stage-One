@@ -51,29 +51,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
-/* Create css grid*/
-.headerGrid {
- grid-area: header;
-}
-
-.main-grid{
-  grid-area: main;
-}
-
-.container {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% auto 15%;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
-}
-
-
-
 /* Navigation/Header*/
 nav {
   display: flex;
